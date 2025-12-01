@@ -1,0 +1,14 @@
+{
+  "name": "radical-resolve",
+  "version": "1.0.0",
+  "description": "Multi-agent conflict resolution system using Google Gemini",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "dotenv": "^16.4.5"
+  }
+}
