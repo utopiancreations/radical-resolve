@@ -1,0 +1,35 @@
+name: radical_resolve
+description: "Radical Resolve — local-first radical acceptance companion"
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.11.5
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+  flutter_riverpod: ^2.5.1
+
+  fllama:
+    git:
+      url: https://github.com/Telosnex/fllama.git
+      ref: main
+
+  dio: ^5.5.0
+  path_provider: ^2.1.4
+  crypto: ^3.0.5
+  shared_preferences: ^2.3.0
+  flutter_secure_storage: ^9.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/prompts/
