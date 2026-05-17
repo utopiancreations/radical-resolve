@@ -12,7 +12,7 @@
     "topK": 50,
     "maxTokens": 1024,
     "repeatPenalty": 1.07,
-    "stopSequences": ["<end_of_turn>", "<eos>"]
+    "stopSequences": ["<turn|>", "<eos>"]
   },
   "behaviorContract": {
     "outputStructure": ["objective_facts", "emotional_narratives", "actionable_plan"],

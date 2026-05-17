@@ -12,7 +12,7 @@
     "topK": 50,
     "maxTokens": 768,
     "repeatPenalty": 1.05,
-    "stopSequences": ["<end_of_turn>", "<eos>"]
+    "stopSequences": ["<turn|>", "<eos>"]
   },
   "behaviorContract": {
     "alwaysCloseWithInvitedPractice": true,

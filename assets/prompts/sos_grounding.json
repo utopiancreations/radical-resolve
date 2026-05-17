@@ -12,7 +12,7 @@
     "topK": 40,
     "maxTokens": 384,
     "repeatPenalty": 1.05,
-    "stopSequences": ["<end_of_turn>", "<eos>"]
+    "stopSequences": ["<turn|>", "<eos>"]
   },
   "behaviorContract": {
     "noProblemSolving": true,
