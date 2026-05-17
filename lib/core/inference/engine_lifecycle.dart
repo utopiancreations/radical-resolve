@@ -12,7 +12,7 @@ final engineReadyProvider = FutureProvider<void>((ref) async {
   if (!engine.isLoaded) {
     await engine.load(
       modelPath: modelFile.path,
-      contextLength: ModelConfig.gemma4E4bRadicalResolveV1.contextLength,
+      contextLength: ModelConfig.radicalResolveV3.contextLength,
     );
   }
 });

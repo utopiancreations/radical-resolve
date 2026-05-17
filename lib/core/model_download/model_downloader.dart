@@ -38,9 +38,10 @@ class ModelDownloader {
   CancelToken? _cancelToken;
 
   Future<File> ensureInstalled() async {
-    if (await storage.isInstalled()) {
+    final installed = await storage.resolveInstalledFile();
+    if (installed != null) {
       _emit(ModelDownloadStatus.ready, 1, 1);
-      return storage.targetFile();
+      return installed;
     }
     return _download();
   }
@@ -114,7 +115,7 @@ class ModelDownloader {
 }
 
 final modelDownloaderProvider = Provider<ModelDownloader>(
-  (ref) => ModelDownloader(config: ModelConfig.gemma4E4bRadicalResolveV1),
+  (ref) => ModelDownloader(config: ModelConfig.radicalResolveV3),
 );
 
 final modelInstallProvider = FutureProvider<File>((ref) async {

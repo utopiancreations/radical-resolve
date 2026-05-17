@@ -19,14 +19,19 @@ class ModelConfig {
   final int contextLength;
   final int gpuLayers;
 
-  static const ModelConfig gemma4E4bRadicalResolveV1 = ModelConfig(
-    id: 'gemma-4-e4b-radical-resolve',
-    version: '1.0.0',
-    fileName: 'gemma-4-e4b-radical-resolve-v1-q5_k_m.gguf',
+  /// Radical Resolve v3 — Gemma 4 E4B fine-tuned on the scrubbed
+  /// radical_resolve_v3 corpus (8,376 samples, no first-person fabrications).
+  /// Produced 2026-05-17 via training/train_radical_resolve_e4b_v3.py +
+  /// merge + llama.cpp convert + Q5_K_M quantize.
+  static const ModelConfig radicalResolveV3 = ModelConfig(
+    id: 'radical-resolve-gemma-4-e4b',
+    version: '3.0.0',
+    fileName: 'radical-resolve-v3-Q5_K_M.gguf',
     downloadUrl:
-        'https://models.radicalresolve.app/gemma-4-e4b-radical-resolve-v1-q5_k_m.gguf',
-    sha256: 'TBD_FILLED_AFTER_TRAINING_CONVERT',
-    sizeBytes: 3300000000,
+        'https://models.radicalresolve.app/radical-resolve-v3-Q5_K_M.gguf',
+    sha256:
+        'd924d2f08131eb71cf3f911d0703c5a2809aea348fbd28ec0f29462ea3a5cff7',
+    sizeBytes: 5762912576,
     contextLength: 4096,
     gpuLayers: 99,
   );

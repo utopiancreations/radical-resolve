@@ -3,16 +3,16 @@ import 'package:flutter/material.dart';
 import '../../core/state/app_mode.dart';
 import '../../widgets/chat_mode_scaffold.dart';
 
-class SosScreen extends StatelessWidget {
-  const SosScreen({super.key});
+class JournalScreen extends StatelessWidget {
+  const JournalScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return const ChatModeScaffold(
-      mode: AppMode.sos,
-      title: 'SOS — Grounding',
-      hintText: 'Type a word, anything…',
-      theme: ChatTheme.dark,
+      mode: AppMode.journal,
+      title: 'Journal',
+      hintText: "What's sitting with you?",
+      theme: ChatTheme.warm,
     );
   }
 }
