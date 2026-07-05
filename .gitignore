@@ -41,7 +41,7 @@ android/captures/
 android/gradlew
 android/gradlew.bat
 android/local.properties
-android/**/GeneratedPluginRegistrant.java
+/**/GeneratedPluginRegistrant.java
 android/key.properties
 /android/app/debug
 /android/app/profile
@@ -90,3 +90,5 @@ models/
 *.pyc
 *.swp
 *.swo
+node_modules
+.next/
